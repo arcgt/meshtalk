@@ -1,0 +1,7 @@
+# custom files
+results
+pretrained_models
+assets/custom
+
+# misc
+__pycache__

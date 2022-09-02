@@ -27,6 +27,15 @@ pytorch3d     (tested with v0.4.0)
 torchaudio    (tested with v0.10.0)
 ```
 
+To create a new environment with the required dependencies, run
+```
+conda install pytorch=1.10.0 torchvision torchaudio cudatoolkit=11.3 -c pytorch -c conda-forge
+conda install -c fvcore -c iopath -c conda-forge fvcore iopath
+conda install -c pytorch3d pytorch3d
+conda install ffmpeg numpy
+conda update ffmpeg
+```
+
 ### Animating a Face Mesh from Audio
 
 Download the [pretrained models](https://github.com/facebookresearch/meshtalk/releases/download/pretrained_models_v1.0/pretrained_models.zip) and unzip them.
@@ -51,4 +60,3 @@ on the `.bin` files containing the vertex positions of the multiface meshes. Not
 ## License
 
 The code and dataset are released under [CC-NC 4.0 International license](https://github.com/facebookresearch/BinauralSpeechSynthesis/blob/main/LICENSE).
-
